@@ -6,7 +6,6 @@ import {
   SignInButton,
 } from "@clerk/astro/components";
 
-import { header_func } from "@scrt/index.ts";
 ---
 
 <style>
@@ -223,11 +222,11 @@ import { header_func } from "@scrt/index.ts";
 
       <!-- Menú de navegación (visible en scroll) -->
       <div id="nav-menu" class="nav-menu flex items-center space-x-6">
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#galeria">Galería</a>
-        <a href="#sobre-nosotros">Sobre Nosotros</a>
-        <a href="#contacto">Contacto</a>
+        <a href="/">Inicio</a>
+        <a href="/#servicios">Servicios</a>
+        <a href="/#galeria">Galería</a>
+        <a href="/#sobre-nosotros">Sobre Nosotros</a>
+        <a href="/about">Contacto</a>
         <SignedOut>
           <a>
             <SignInButton

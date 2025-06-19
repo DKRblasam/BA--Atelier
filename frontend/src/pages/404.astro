@@ -4,9 +4,6 @@
 // Assets
 import background from "@ast/background.avif";
 
-// scripts
-import f404 from "@/Scripts/index.ts";
-
 // Estilos
 import "@sty/styles__.css";
 
@@ -14,6 +11,7 @@ import "@sty/styles__.css";
 import Layout from "@lyt/Layout.astro";
 import Header from "@cmp/section/header.astro";
 import Carrusel from "@cmp/section/carrusel.astro";
+import Foot from "@cmp/section/footer.astro"; 
 ---
 
 <Layout title="404 - Página No Encontrada | BA Atelier">
@@ -60,6 +58,9 @@ import Carrusel from "@cmp/section/carrusel.astro";
       </div>
     </div>
   </main>
+
+  <Foot />
+
 </Layout>
 
 <style>
