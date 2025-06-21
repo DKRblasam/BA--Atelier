@@ -61,7 +61,7 @@ Frontend/
 ├── astro.config.mjs
 ├── package.json
 ├── tailwind.config.mjs
-├── tsconfig.json
+├── tsconfig.json 
 └── ...
 ```
 
