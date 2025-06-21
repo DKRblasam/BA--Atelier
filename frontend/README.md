@@ -1,48 +1,107 @@
-# Astro Starter Kit: Basics
+# 🎨 BA-Atelier Frontend
 
-```sh
-pnpm create astro@latest -- --template basics
+**BA-Atelier** es el frontend de una plataforma construida con [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/) y [TypeScript](https://www.typescriptlang.org/). Esta interfaz moderna y modular aprovecha integraciones como Clerk para autenticación y anima elementos mediante Tailwind Animations.
+
+---
+
+## 🚀 Tecnologías principales
+
+- ⚡ **Astro** – Framework web moderno, rápido y orientado a contenido estático/dinámico.
+- 🎨 **Tailwind CSS** – Framework de estilos utilitarios con animaciones personalizadas.
+- 🔐 **Clerk** – Autenticación de usuarios lista para producción.
+- 🧠 **TypeScript** – Tipado estático para mayor robustez y escalabilidad.
+- 📦 **pnpm** – Gestor de paquetes ultrarrápido.
+
+---
+
+## 📁 Estructura del proyecto
+
+```bash
+Frontend/
+├── .env                # Variables de entorno
+├── public/             # Archivos estáticos (favicon, íconos, etc.)
+├── src/                # Código fuente
+│   ├── assets/         # Imágenes y recursos visuales
+│   ├── components/     # Componentes reutilizables
+│   ├── layouts/        # Plantillas de diseño
+│   ├── pages/          # Rutas del sitio (Astro routing)
+│   ├── Scripts/        # Lógica o scripts auxiliares
+│   └── styles/         # Archivos CSS globales
+├── astro.config.mjs    # Configuración de Astro
+├── tailwind.config.mjs # Configuración de Tailwind CSS
+├── tsconfig.json       # Configuración de TypeScript
+├── package.json        # Scripts y dependencias
+└── pnpm-lock.yaml      # Lockfile de dependencias
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🛠 Scripts disponibles
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+Todos los comandos se ejecutan con `pnpm`:
 
-## 🚀 Project Structure
+| Comando        | Descripción                          |
+|----------------|--------------------------------------|
+| `pnpm install` | Instala todas las dependencias       |
+| `pnpm dev`     | Inicia el servidor de desarrollo     |
+| `pnpm build`   | Genera la build optimizada           |
+| `pnpm preview` | Previsualiza la build antes de subir |
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+## 📦 Dependencias clave
+
+```json
+"dependencies": {
+  "@astrojs/node": "^9.2.2",
+  "@clerk/astro": "^2.9.1",
+  "@clerk/localizations": "^3.16.5",
+  "@clerk/themes": "^2.2.50",
+  "@midudev/tailwind-animations": "^0.2.0",
+  "@tailwindcss/vite": "^4.1.10",
+  "astro": "^5.9.4",
+  "tailwindcss": "^4.1.10"
+}
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## ✅ Requisitos del entorno
 
-All commands are run from the root of the project, from a terminal:
+- [Node.js](https://nodejs.org/) ≥ 18
+- [pnpm](https://pnpm.io/) ≥ 8
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
+## 🧪 Instalación y uso
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+# Clonar el repositorio
+git clone https://github.com/DKRblasam/BA-Atelier.git
+cd BA-Atelier/Frontend
+
+# Instalar dependencias
+pnpm install
+
+# Iniciar el servidor de desarrollo
+pnpm dev
+```
+
+---
+
+## 🔐 Autenticación
+
+Este proyecto usa [Clerk](https://clerk.dev/) para la gestión de usuarios. Asegúrate de crear un archivo `.env` con las claves necesarias basadas en `.env.example`.
+
+---
+
+## 📄 Licencia
+
+MIT – [LICENSE](../LICENSE)
+
+---
+
+## ✨ Créditos
+
+Proyecto creado y mantenido por [DKRblasam](https://github.com/DKRblasam).  
+Inspirado en el enfoque moderno y accesible para aplicaciones web frontend.
